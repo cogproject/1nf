@@ -13,7 +13,7 @@ public class FirstNormalForm {
 
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.err.println("使用方法: java NormalizeTSVFileInput <入力TSVファイルパス>");
+            System.err.println("使用方法: java FirstNormalForm <入力TSVファイルパス>");
             System.exit(1);
         }
 
