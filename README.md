@@ -16,7 +16,7 @@ cherry	fruit
 	beverage
 
 
-3. 第一正規化の逆変換
+2. 第一正規化の逆変換
 java ReverseFirstNormalForm < <入力TSVファイルパス>
 
 <実行結果>  
