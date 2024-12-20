@@ -69,13 +69,17 @@ public class ReverseFirstNormalForm {
         }
 
         // グループ化した結果をコロン(:)で連結して出力
-        for (Map.Entry<String, List<String>> entry : map.entrySet()) {
-            String key = entry.getKey();
-            List<String> values = entry.getValue();
+        // ここから修正: キーをソートする
+        List<String> sortedKeys = new ArrayList<>(map.keySet());
+        Collections.sort(sortedKeys);
+
+        for (String key : sortedKeys) {
+            List<String> values = map.get(key);
             // コロンで連結
             String joined = String.join(":", values);
             System.out.println(key + "\t" + joined);
         }
+
     }
 
     /**
