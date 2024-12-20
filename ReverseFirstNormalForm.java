@@ -69,7 +69,7 @@ public class ReverseFirstNormalForm {
         }
 
         // グループ化した結果をコロン(:)で連結して出力
-        // ここから修正: キーをソートする
+        // キーをソートする
         List<String> sortedKeys = new ArrayList<>(map.keySet());
         Collections.sort(sortedKeys);
 
